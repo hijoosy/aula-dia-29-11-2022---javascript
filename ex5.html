@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function aposentar() {
+        var idade = parseInt(document.getElementById("idade").value);
+        if (idade >=65) {
+            alert("Parabens, você ja pode se aposentar!");         
+        }else{
+            alert("Ainda falta " + (65 - idade) + " anos para se aposentar. ")
+        }
+    }    
+    </script>
+
+
+    Qual a sua idade: <br/>
+    <input type="text" name="" id="idade"> <!--javascript trabalha com id/ PHP trabalha com name/ se os dois estivem juntos, usa-se os dois (name e id).-->
+    <button onclick="aposentar()">OK</button>
+</body>
+</html>
